@@ -1,0 +1,39 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<p>
+				This website aims to be the definitive resource on one of J.S. Bach's most 
+				fascinating and <a href="https://www.youtube.com/watch?v=YqXZtGyFyDo&t=4022s">beautiful</a>
+				works: the final unfinished fugue from 
+				<a href="https://en.wikipedia.org/wiki/The_Art_of_Fugue">The Art of the Fugue</a>, 
+				also known as <i>Fuga a 3 Soggetti</i> or <i>Contrapunctus XIV</i>. 
+			</p>
+			<p>
+				From its structure, including the <a href="https://en.wikipedia.org/wiki/BACH_motif">BACH motif</a> at
+				the beginning of the third subject, to its abrupt ending at measure 239, there is <a href="/the-fugue">much to learn</a>
+				about this work and the circumstances of its composition.
+			</p>
+			<p>
+				Over the years, many musicians have studied it and proposed <a href="/completions">completions</a>, many of which include
+				a final fourth subject. We will try to reference all these works, as well as the many novel completions
+				thay may arise in the era of <a href="https://en.wikipedia.org/wiki/Generative_artificial_intelligence">Generative AI</a>.
+			</p>
+			<p>
+				If you are interested in this topic, please <a href="mailto:contact@contrapunctus14.org">reach out</a> or <a href="https://github.com/sylvinus/contrapunctus14">contribute</a>!
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
